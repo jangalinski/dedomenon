@@ -4,8 +4,8 @@ plugins {
     application
 }
 
-repositories {
-    jcenter()
+apply {
+    from("${rootProject.rootDir}/gradle/repositories.gradle.kts")
 }
 
 dependencies {
